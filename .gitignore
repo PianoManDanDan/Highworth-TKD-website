@@ -1,1 +1,8 @@
 *.jpg
+!/image/Alison.jpg
+!/image/Daniel.jpg
+!/image/Andrew.jpg
+
+/image/Alison.png
+/image/Daniel.png
+/image/Andrew.png
