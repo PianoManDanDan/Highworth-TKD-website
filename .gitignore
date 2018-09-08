@@ -1,8 +1,8 @@
 *.jpg
-!/image/Alison.jpg
-!/image/Daniel.jpg
-!/image/Andrew.jpg
+!/images/Alison.jpg
+!/images/Daniel.jpg
+!/images/Andrew.jpg
 
-/image/Alison.png
-/image/Daniel.png
-/image/Andrew.png
+/images/Alison.png
+/images/Daniel.png
+/images/Andrew.png
