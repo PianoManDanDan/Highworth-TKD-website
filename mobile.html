@@ -8,21 +8,12 @@
 	<meta name="author" content="Daniel Martin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Mobile and Tablet redirect script by https://pagecrafter.com -->
-	<script type="text/javascript" src="js/redirection-mobile.js"></script>
-	<script type="text/javascript">// <![CDATA[
-		SA.redirection_mobile ({
-			mobile_url : "./mobile.html",
-			tablet_redirection: "true",
-			tablet_host: "./mobile.html",
-		});
-
-	// ]]></script>
-
 	<title>Highworth Tae Kwon-Do</title>
 	<link rel="icon" href="./images/icon.png">
-	<link href="index.css" type="text/css" rel="stylesheet">
+	<link href="mobile.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="js/navbar.js"></script>
 </head>
 
 <body>
@@ -31,18 +22,20 @@
 		<div id="banner">																																									<!--		BANNER IS HUGE FILE!!! 13MB!!!!!!		-->
 			<img class="banner_logo" src="https://via.placeholder.com/1920x550" style="width: 100%;" alt="Banner and logo">
 		</div>
-
-		<div class="navbar">
-			<!-- NAVIGATION BAR AT THE TOP OF THE SCREEN -->
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#instructors">Instructors</a></li>
-				<li><a href="#classes">Classes</a></li>
-				<li><a href="#contact">Contact Us</a></li>
-				<li><a href="#links">Links</a></li>
-				<li style="float:right;"><a href="#top">Top of Page</a></li>
-			</ul>
+		<!-- HERE IS WHERE THE SIDENAV STARTS -->
+		<div id="Sidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#about">About</a>
+			<a href="#instructors">Instructors</a>
+			<a href="#classes">Classes</a>
+			<a href="#contact">Contact Us</a>
+			<a href="#links">Links</a>
+			<a href="#top">Top of Page</a>
 		</div>
+
+		<span onclick="openNav()">&#9776;</span>
+		
+		<!-- AND HERE IS WHERE IT ENDS -->
 
 		<div id="about">
 			<!-- DETAILS ABOUT WHAT TKD IS AND ABOUT HIGHWORTH TKD -->
