@@ -83,7 +83,7 @@ iframe {
 	max-height: 75%;
 }
 
-td {
+.classes-table {
 	font-size: 1.5em;
 	font-weight: 500;
 	padding: 5px;
