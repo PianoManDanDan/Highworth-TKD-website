@@ -6,6 +6,7 @@
 
 body {
 	background: linear-gradient(-45deg, #333333, #C90303, #333333);
+	overflow-x: hidden;
 }
 
 .navbar {
@@ -52,7 +53,7 @@ h1 {
 	font-family: "Bebas Neue";
 	font-size: 4em;
 	color: white;
-	margin-top: 50px;
+	padding-top: 50px;
 	
 }
 
@@ -65,8 +66,13 @@ h2, h3 {
 	padding-top: 14px;
 }
 
+h4 {
+	font-size: 20px;
+}
+
 p, a {
-	font-size: 1.2em;
+	/*font-size: 1.2em;*/
+	font-size: 20px;
 }
 
 img {
@@ -77,11 +83,17 @@ img {
 iframe {
 	border: none;
 	padding: 14px;
-	height: 450px;
-	width: 600px;
+	height: 600px;
+	width: 800px;
 	max-width: 100%;
 	max-height: 75%;
+	display: block;
+	margin: 0 auto;
 }
+
+#classes-table { 						/*DOES THIS LOOK GOOD?*/
+	margin: 0 auto;
+} 
 
 .classes-table {
 	font-size: 1.5em;
@@ -92,12 +104,12 @@ iframe {
 #copyright {
 	font-family: Helvetica;
 	color: white;
-	font-size: 0.7em;
-}
-
-#about, #instructors, #classes, #contact, #links, #copyright {
 	padding: 14px;
 	overflow: auto;
+}
+
+#about, #instructors, #classes, #contact, #links {
+	margin: 0 15%;
 }
 
 .person, .external_logo {
