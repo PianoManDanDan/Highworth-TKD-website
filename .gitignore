@@ -1,9 +1,1 @@
-*.jpg
-*.svg
-!/images/Alison.jpg
-!/images/Daniel.jpg
-!/images/Andrew.jpg
-
-/images/Alison.png
-/images/Daniel.png
-/images/Andrew.png
+./images/banner.png
