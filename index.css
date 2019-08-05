@@ -118,6 +118,7 @@ iframe {
 	height: 150px;
 	width: 150px;
 	max-height: 10%;
+	align: left;
 }
 
 .banner_logo {
