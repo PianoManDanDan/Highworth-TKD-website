@@ -8,6 +8,7 @@ export const HomePage: React.FC<{}> = () => {
 			<AboutUs />
 			<People />
 			<ContactUs />
+			<Links />
 		</div>
 	);
 };

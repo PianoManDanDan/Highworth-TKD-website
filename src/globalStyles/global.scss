@@ -19,6 +19,14 @@ body {
 	background: linear-gradient(-45deg, color(homepage, tkd-gray, 1), color(homepage, tkd-red, 1), color(homepage, tkd-gray, 1));
 }
 
+a {
+	color: color(homepage, tkd-white, 1);
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 #root {
 	display: flex;
 	flex-direction: column;
