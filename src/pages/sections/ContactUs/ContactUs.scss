@@ -4,14 +4,6 @@
 .section-body {
 	@include bodyFont();
 
-	a {
-		color: color(homepage, tkd-white, 1);
-
-		&:hover {
-			text-decoration: none;
-		}
-	}
-
 	.font-awesome-icon {
 		vertical-align: middle;
 		padding-right: 0.5rem;
