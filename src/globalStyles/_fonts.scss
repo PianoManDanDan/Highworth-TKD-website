@@ -1,0 +1,17 @@
+@import './sizes';
+
+@mixin sectionHeaderFont {
+	font-family: 'Bebas Neue';
+	font-size: 6rem;
+	font-weight: 600;
+
+	@include mediaQueryFor(xsmall, max) {
+		font-size: 12vw;
+	}
+}
+
+@mixin bodyFont {
+	font-family: 'Roboto';
+	font-size: 2rem;
+	font-weight: 60;
+}

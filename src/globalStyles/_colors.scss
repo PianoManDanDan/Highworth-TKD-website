@@ -1,0 +1,22 @@
+// Use @import './globalStyles/colors.scss'; when you want to use these colors in any other sass files
+
+$colors: (
+	homepage: (
+		tkd-white: (
+			1: #dddddd,
+			2: #ffffff
+		),
+		tkd-red: (
+			1: #c90303,
+			2: #ff0000
+		),
+		tkd-gray: (
+			1: #333333,
+			2: #000000
+		)
+	)
+);
+
+@function color($section, $name, $tint: 100) {
+	@return map-get(map-get(map-get($colors, $section), $name), $tint);
+}
