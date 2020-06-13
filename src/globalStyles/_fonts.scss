@@ -3,7 +3,7 @@
 @mixin sectionHeaderFont {
 	font-family: 'Bebas Neue';
 	font-size: 6rem;
-	font-weight: 600;
+	font-weight: normal;
 
 	@include mediaQueryFor(xsmall, max) {
 		font-size: 12vw;
@@ -12,6 +12,6 @@
 
 @mixin bodyFont {
 	font-family: 'Roboto';
-	font-size: 2rem;
-	font-weight: 60;
+	font-size: 1.8rem;
+	font-weight: normal;
 }
