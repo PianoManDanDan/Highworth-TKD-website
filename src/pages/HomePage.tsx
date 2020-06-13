@@ -6,6 +6,7 @@ export const HomePage: React.FC<{}> = () => {
 	return (
 		<div>
 			<AboutUs />
+			<People />
 		</div>
 	);
 };

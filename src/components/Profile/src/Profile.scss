@@ -1,0 +1,20 @@
+@import '../../../globalStyles/fonts';
+
+.profile {
+	&-image {
+		display: block;
+	};
+
+	&-details {
+		@include bodyFont();
+
+		&__name {
+			font-size: 2rem;
+			font-weight: bold;
+		}
+		&__grade {
+			font-weight: bold;
+		}
+	}
+
+}
