@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const SRC_PATH = path.join(__dirname, '../src');
+const ASSETS_PATH = path.join(__dirname, '../assets');
 
 module.exports = {
 	entry: {
@@ -39,7 +40,7 @@ module.exports = {
 	],
 
 	resolve: {
-		extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss'],
+		extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss', '.jpg', '.png'],
 	},
 
 	module: {
@@ -61,7 +62,7 @@ module.exports = {
 			},
 			{
 				test: /\.(svg|png|jpe?g|gif)$/,
-				include: [SRC_PATH],
+				include: [SRC_PATH, ASSETS_PATH],
 				use: [
 					{
 						loader: 'url-loader',

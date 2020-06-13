@@ -10,7 +10,9 @@ export const LinkWrapper: React.FC<LinkWrapperProps> = ({
 	return (
 		<div className="link-wrapper">
 			<div className="link-wrapper__image">
-				<img src={image.src} alt={image.alt} />
+				<a href={link.src} target="_blank" rel="noopener noreferrer">
+					<img src={image.src} alt={image.alt} />
+				</a>
 			</div>
 			<div className="link-wrapper-content">
 				<div className="link-wrapper-content__link">

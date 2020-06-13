@@ -3,11 +3,13 @@ import { SectionHeading } from '../../../components/SectionHeading/src';
 import './Links.scss';
 import { LinkWrapperProps } from '../../../components/LinkWrapper/src/types';
 import { LinkWrapper } from '../../../components/LinkWrapper/src';
+import deediganLogo from '../../../../assets/deedigan-logo.png';
+import itfuLogo from '../../../../assets/ITFU.png';
 
 const externalLinks: LinkWrapperProps[] = [
 	{
 		image: {
-			src: '',
+			src: deediganLogo,
 			alt: 'Master Deedigan Martial Arts logo',
 		},
 		link: {
@@ -20,7 +22,7 @@ const externalLinks: LinkWrapperProps[] = [
 	},
 	{
 		image: {
-			src: '',
+			src: itfuLogo,
 			alt: 'ITF Union logo',
 		},
 		link: {

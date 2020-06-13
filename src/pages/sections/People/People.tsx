@@ -2,11 +2,14 @@ import React from 'react';
 import { SectionHeading } from '../../../components/SectionHeading/src';
 import { Profile, ProfileProps } from '../../../components/Profile/src';
 import './People.scss';
+import alison from '../../../../assets/Alison.jpg';
+import daniel from '../../../../assets/Daniel.jpg';
+import andrew from '../../../../assets/Andrew.jpg';
 
 const instructors: ProfileProps[] = [
 	{
 		image: {
-			src: '',
+			src: alison,
 			alt: 'Instructor Mrs Alison Lee',
 		},
 		name: 'Mrs Alison Lee',
@@ -16,11 +19,11 @@ const instructors: ProfileProps[] = [
 	},
 	{
 		image: {
-			src: '',
+			src: daniel,
 			alt: 'Instructor Mr Daniel Martin',
 		},
 		name: 'Mr Daniel Martin',
-		grade: '3rd Degree Instructor',
+		grade: '4th Degree Instructor',
 		bio: `Mr Martin started Tae Kwon-Do in 2002, training under Mrs Lee. He has over 15 years
 			of experience in Tae Kwon-Do, and over 8 years of teaching experience.\nMr Martin 
 			currently trains under Master Don Deedigan and also trained under Master Dean Matthews 
@@ -30,7 +33,7 @@ const instructors: ProfileProps[] = [
 	},
 	{
 		image: {
-			src: '',
+			src: andrew,
 			alt: 'Assistant Instructor Mr Andrew Beazer',
 		},
 		name: 'Mr Andrew Beazer',
