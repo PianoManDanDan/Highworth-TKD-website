@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutUs } from './sections';
+import { AboutUs, People, Classes, ContactUs, Links } from './sections';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export const HomePage: React.FC<{}> = () => {
@@ -7,6 +7,7 @@ export const HomePage: React.FC<{}> = () => {
 		<div>
 			<AboutUs />
 			<People />
+			<Classes />
 			<ContactUs />
 			<Links />
 		</div>
