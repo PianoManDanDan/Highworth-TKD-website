@@ -1,6 +1,11 @@
 import React from 'react';
+import { AboutUs } from './sections';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export const HomePage: React.FC<{}> = () => {
-	return <div>Home</div>;
+	return (
+		<div>
+			<AboutUs />
+		</div>
+	);
 };

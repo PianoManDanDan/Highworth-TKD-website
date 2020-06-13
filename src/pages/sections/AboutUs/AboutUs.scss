@@ -1,0 +1,7 @@
+@import '../../../globalStyles/fonts';
+
+#about {
+	.section-body {
+		@include bodyFont();
+	}
+}
