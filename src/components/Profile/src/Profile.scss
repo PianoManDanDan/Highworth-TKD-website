@@ -1,15 +1,27 @@
 @import '../../../globalStyles/fonts';
+@import '../../../globalStyles/sizes';
 
 .profile {
 	&-image {
 		display: block;
+		padding-bottom: 1rem;
+		@include mediaQueryFor(small, max) {
+			max-width: 20rem;
+			margin: 0 auto;
+		}
+
 		img {
 			width: 100%;
-	}
+		}
 	};
 
 	&-details {
 		@include bodyFont();
+		padding-left: 2rem;
+		padding-bottom: 1.5rem;
+		@include mediaQueryFor(small, max) {
+			padding-left: 0;
+		}
 
 		&__name {
 			font-size: 2rem;

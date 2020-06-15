@@ -11,10 +11,10 @@ export const Profile: React.FC<ProfileProps> = ({
 	return (
 		<div className="profile">
 			<div className="row">
-				<div className="profile-image col-xs-12 col-sm-3">
+				<div className="profile-image col-sm-12 col-md-2">
 					<img src={image.src} alt={image.alt} />
 				</div>
-				<div className="profile-details col-xs-12 col-sm-9">
+				<div className="profile-details col-sm-12 col-md-9">
 					<div className="profile-details__name">{name}</div>
 					<div className="profile-details__grade">{grade}</div>
 					<div className="profile-details__bio">{bio}</div>
