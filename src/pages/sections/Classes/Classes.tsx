@@ -5,7 +5,7 @@ import './Classes.scss';
 
 export const Classes: React.FC<{}> = () => {
 	return (
-		<div id="classes">
+		<div id="classes" className="section">
 			<SectionHeading text="Classes" />
 			<div className="section-body">
 				We run 2 classes each week at the Halo Highworth Recreation Centre,

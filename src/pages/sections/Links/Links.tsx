@@ -37,7 +37,7 @@ const externalLinks: LinkWrapperProps[] = [
 
 export const Links: React.FC<{}> = () => {
 	return (
-		<div id="links">
+		<div id="links" className="section">
 			<SectionHeading text="Links" />
 			<div className="section-body">
 				{externalLinks.map((link) => (

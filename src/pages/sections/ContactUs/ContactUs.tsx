@@ -6,7 +6,7 @@ import './ContactUs.scss';
 
 export const ContactUs: React.FC<{}> = () => {
 	return (
-		<div id="contact">
+		<div id="contact" className="section">
 			<SectionHeading text="Contact Us" />
 			<div className="section-body">
 				You can contact our head instructor using the following links:

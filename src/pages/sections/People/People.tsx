@@ -45,7 +45,7 @@ const instructors: ProfileProps[] = [
 
 export const People: React.FC<{}> = () => {
 	return (
-		<div id="people">
+		<div id="people" className="section">
 			<SectionHeading text="People" />
 			<div className="section-body">
 				{instructors.map((instructor) => (

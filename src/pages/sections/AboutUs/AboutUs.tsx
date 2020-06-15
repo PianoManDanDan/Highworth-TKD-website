@@ -4,7 +4,7 @@ import './AboutUs.scss';
 
 export const AboutUs: React.FC<{}> = () => {
 	return (
-		<div id="about">
+		<div id="about" className="section">
 			<SectionHeading text="About Us" />
 			<div className="section-body">
 				Tae Kwon-Do is a Korean Martial art, officially founded by General Choi
