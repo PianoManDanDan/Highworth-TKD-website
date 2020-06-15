@@ -1,0 +1,47 @@
+@import '../../../globalStyles/fonts';
+@import '../../../globalStyles/colors';
+
+@mixin stickyTop() {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.navbar-menu {
+	@include stickyTop();
+	@include bodyFont();
+	text-align: left;
+	overflow: hidden;
+	background-color: color(homepage, tkd-gray, 1);
+	width: 100%; 
+	margin: 0;
+
+	ul {
+		padding: 0 1.5rem;
+	}
+
+	li { 
+		display: inline;
+		list-style-type: none;
+
+		a {
+			text-align: center;
+			padding: 1.4rem 1.6rem;
+			font-weight: bold;
+			text-decoration: none;
+
+			&:hover {
+				color: color(homepage, tkd-gray, 1);
+				background: color(homepage, tkd-white, 1);
+			}
+		}
+	}
+
+}
+
+.burger-menu {
+	li {
+		display: block;
+		list-style-type: none;
+	}
+}
