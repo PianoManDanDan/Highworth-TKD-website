@@ -11,11 +11,13 @@ export const HomePage: React.FC<{}> = () => {
 				imageSrc={bannerImage}
 				altText="Highworth Tae Kwon-Do Club logo"
 			/>
-			<AboutUs />
-			<People />
-			<Classes />
-			<ContactUs />
-			<Links />
+			<div className="app-content-container">
+				<AboutUs />
+				<People />
+				<Classes />
+				<ContactUs />
+				<Links />
+			</div>
 		</div>
 	);
 };

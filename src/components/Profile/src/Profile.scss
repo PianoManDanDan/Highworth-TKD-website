@@ -3,6 +3,9 @@
 .profile {
 	&-image {
 		display: block;
+		img {
+			width: 100%;
+	}
 	};
 
 	&-details {
