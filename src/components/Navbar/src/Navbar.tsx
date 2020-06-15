@@ -32,7 +32,7 @@ export const Navbar: React.FC<{}> = () => {
 						<a href="#contact">Contact Us</a>
 					</li>
 					<li>
-						<a href="#link">Links</a>
+						<a href="#links">Links</a>
 					</li>
 					<li style={{ float: 'right' }}>
 						<a href="#top">Top of Page</a>
