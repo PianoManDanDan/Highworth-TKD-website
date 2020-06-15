@@ -10,12 +10,12 @@ export const LinkWrapper: React.FC<LinkWrapperProps> = ({
 	return (
 		<div className="link-wrapper">
 			<div className="row">
-				<div className="link-wrapper__image col-xs-12 col-sm-3">
+				<div className="link-wrapper__image col-sm-12 col-md-2">
 					<a href={link.src} target="_blank" rel="noopener noreferrer">
 						<img src={image.src} alt={image.alt} />
 					</a>
 				</div>
-				<div className="link-wrapper-content col-xs-12 col-sm-9">
+				<div className="link-wrapper-content col-sm-12 col-md-9">
 					<div className="link-wrapper-content__link">
 						<a href={link.src} target="_blank" rel="noopener noreferrer">
 							{link.text}
