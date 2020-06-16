@@ -9,8 +9,10 @@ export const AboutUs: React.FC<{}> = () => {
 			<div className="section-body">
 				Tae Kwon-Do is a Korean Martial art, officially founded by General Choi
 				Hong Hi in 1955. Tae Kwon-Do (literally,
-				<i>&lsquo;The art of Kicking and Punching&rsquo;</i>) is a defensive
-				martial art focusing on self-defense and discipline.
+				<span className="definition">
+					&lsquo;The art of Kicking and Punching&rsquo;
+				</span>
+				) is a defensive martial art focusing on self-defense and discipline.
 				<br />
 				Highworth Tae Kwon-Do club was started in the 1990&apos;s by the head
 				instructor, Mrs Alison Lee.

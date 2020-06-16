@@ -4,4 +4,7 @@
 	.section-body {
 		@include bodyFont();
 	}
+	.definition {
+		font-style: italic;
+	}
 }
