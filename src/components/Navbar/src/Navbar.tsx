@@ -15,8 +15,8 @@ export const Navbar: React.FC<{}> = () => {
 				<FontAwesomeIcon icon={faTimes} className="font-awesome-icon__navbar" />
 			}
 			changeMenuOn={breakpointSizes.smMinBreakpoint}
-			largeMenuClassName="navbar-menu"
-			smallMenuClassName="burger-menu"
+			largeMenuClassName="navbar navbar-menu"
+			smallMenuClassName="navbar burger-menu"
 			menu={
 				<ul>
 					<li>
@@ -33,9 +33,6 @@ export const Navbar: React.FC<{}> = () => {
 					</li>
 					<li>
 						<a href="#links">Links</a>
-					</li>
-					<li style={{ float: 'right' }}>
-						<a href="#top">Top of Page</a>
 					</li>
 				</ul>
 			}

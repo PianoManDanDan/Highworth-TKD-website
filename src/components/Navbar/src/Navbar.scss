@@ -7,14 +7,16 @@
 	top: 0;
 }
 
-.navbar-menu {
+.navbar {
 	@include stickyTop();
 	@include bodyFont();
-	text-align: left;
 	overflow: hidden;
 	background-color: color(homepage, tkd-gray, 1);
-	width: 100%; 
 	margin: 0;
+
+	&-menu {
+		width: 100%;
+	}
 
 	ul {
 		padding: 0 1.5rem;
