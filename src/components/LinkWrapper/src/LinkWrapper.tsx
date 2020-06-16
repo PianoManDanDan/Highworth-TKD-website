@@ -11,7 +11,12 @@ export const LinkWrapper: React.FC<LinkWrapperProps> = ({
 		<div className="link-wrapper">
 			<div className="row">
 				<div className="link-wrapper__image col-sm-12 col-md-2">
-					<a href={link.src} target="_blank" rel="noopener noreferrer">
+					<a
+						href={link.src}
+						target="_blank"
+						rel="noopener noreferrer"
+						tabIndex={-1}
+					>
 						<img src={image.src} alt={image.alt} />
 					</a>
 				</div>
