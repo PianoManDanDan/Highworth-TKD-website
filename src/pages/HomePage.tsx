@@ -8,6 +8,7 @@ import {
 	ContactUs,
 	AffiliateLinks,
 } from './sections';
+import { Footer } from '../components/Footer/src';
 import bannerImage from '../../assets/horizontal-logo.svg';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
@@ -26,6 +27,7 @@ export const HomePage: React.FC<{}> = () => {
 				<ContactUs />
 				<AffiliateLinks />
 			</div>
+			<Footer />
 		</div>
 	);
 };
