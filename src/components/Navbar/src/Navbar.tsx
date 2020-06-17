@@ -1,49 +1,47 @@
-import React from 'react';
-import ResponsiveNavbar from 'react-responsive-navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import breakpointSizes from '../../../globalStyles/_sizes.scss';
+import React, { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { navbarLink } from './types';
 import './Navbar.scss';
 
 export const Navbar: React.FC<{}> = () => {
+	const links: navbarLink[] = [
+		{
+			text: 'About Us',
+			link: '#about',
+		},
+		{
+			text: 'People',
+			link: '#people',
+		},
+		{
+			text: 'Classes',
+			link: '#classes',
+		},
+		{
+			text: 'Contact Us',
+			link: '#contact',
+		},
+		{
+			text: 'Our Affiliates',
+			link: '#links',
+		},
+	];
+
+	const [menuOpen, setMenuOpen] = useState(false);
 	return (
-		<div className="stuck">
-			<ResponsiveNavbar
-				menuOpenButton={
-					<FontAwesomeIcon
-						icon={faBars}
-						className="font-awesome-icon__navbar"
-					/>
-				}
-				menuCloseButton={
-					<FontAwesomeIcon
-						icon={faTimes}
-						className="font-awesome-icon__navbar"
-					/>
-				}
-				changeMenuOn={breakpointSizes.smMinBreakpoint}
-				largeMenuClassName="navbar navbar-menu"
-				smallMenuClassName="navbar burger-menu"
-				menu={
-					<ul>
-						<li>
-							<a href="#about">About Us</a>
+		<div className="navbar">
+			<div className="app-content-container">
+				<button type="button" onClick={() => setMenuOpen(!menuOpen)}>
+					<FaBars />
+				</button>
+				<ul className={menuOpen ? 'nav-links nav-open' : 'nav-links'}>
+					{links.map((link) => (
+						<li key={link.text}>
+							<a href={link.link}>{link.text}</a>
 						</li>
-						<li>
-							<a href="#people">People</a>
-						</li>
-						<li>
-							<a href="#classes">Classes</a>
-						</li>
-						<li>
-							<a href="#contact">Contact Us</a>
-						</li>
-						<li>
-							<a href="#links">Links</a>
-						</li>
-					</ul>
-				}
-			/>
+					))}
+				</ul>
+			</div>
 		</div>
 	);
 };

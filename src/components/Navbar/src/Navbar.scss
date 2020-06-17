@@ -1,5 +1,6 @@
 @import '../../../globalStyles/fonts';
 @import '../../../globalStyles/colors';
+@import '../../../globalStyles/sizes';
 
 @mixin stickyTop() {
 	position: sticky;
@@ -7,24 +8,20 @@
 	top: 0;
 }
 
-.stuck {
-	@include stickyTop();
-}
-
 .navbar {
-	// @include stickyTop();
 	@include bodyFont();
+	@include stickyTop();
 	overflow: hidden;
 	background-color: color(homepage, tkd-gray, 1);
 	margin: 0;
-	z-index: 999999;
+	z-index: 1;
 
-	&-menu {
-		width: 100%;
+	button {
+		display: none;
 	}
 
 	ul {
-		padding: 0 1.5rem;
+		text-align: center;
 	}
 
 	li { 
@@ -44,24 +41,19 @@
 		}
 	}
 
-}
+	@include mediaQueryFor(small, max) {
+		button {
+			display: inline-block;
+			@include bodyFont();
+			color: inherit;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			outline: none;
+		}
 
-.burger-menu {
-	padding: 1rem 1.5rem;
-
-	div[role='button'] {
-		text-align: left;
-	}
-	li {
-		display: block;
-		list-style-type: none;
-		padding: 0.5rem 0.5rem;
-
-		a {
+		li {
 			display: block;
-			margin: auto;
-			padding: 0.5rem 0.5rem;
-			width: 50%;
 		}
 	}
 }
