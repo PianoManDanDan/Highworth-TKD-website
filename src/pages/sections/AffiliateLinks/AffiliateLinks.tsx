@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionHeading } from '../../../components/SectionHeading/src';
-import './Links.scss';
+import './AffiliateLinks.scss';
 import { LinkWrapperProps } from '../../../components/LinkWrapper/src/types';
 import { LinkWrapper } from '../../../components/LinkWrapper/src';
 import deediganLogo from '../../../../assets/deedigan-logo.png';
@@ -35,10 +35,10 @@ const externalLinks: LinkWrapperProps[] = [
 	},
 ];
 
-export const Links: React.FC<{}> = () => {
+export const AffiliateLinks: React.FC<{}> = () => {
 	return (
 		<div id="links" className="section">
-			<SectionHeading text="Links" />
+			<SectionHeading text="Our Affiliates" />
 			<div className="section-body">
 				{externalLinks.map((link) => (
 					<LinkWrapper {...link} key={link.link.text} />

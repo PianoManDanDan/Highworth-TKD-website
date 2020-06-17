@@ -1,7 +1,13 @@
 import React from 'react';
 import { Banner } from '../components/Banner/src';
 import { Navbar } from '../components/Navbar/src';
-import { AboutUs, People, Classes, ContactUs, Links } from './sections';
+import {
+	AboutUs,
+	People,
+	Classes,
+	ContactUs,
+	AffiliateLinks,
+} from './sections';
 import bannerImage from '../../assets/horizontal-logo.svg';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
@@ -18,7 +24,7 @@ export const HomePage: React.FC<{}> = () => {
 				<People />
 				<Classes />
 				<ContactUs />
-				<Links />
+				<AffiliateLinks />
 			</div>
 		</div>
 	);
