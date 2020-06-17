@@ -7,35 +7,43 @@ import './Navbar.scss';
 
 export const Navbar: React.FC<{}> = () => {
 	return (
-		<ResponsiveNavbar
-			menuOpenButton={
-				<FontAwesomeIcon icon={faBars} className="font-awesome-icon__navbar" />
-			}
-			menuCloseButton={
-				<FontAwesomeIcon icon={faTimes} className="font-awesome-icon__navbar" />
-			}
-			changeMenuOn={breakpointSizes.smMinBreakpoint}
-			largeMenuClassName="navbar navbar-menu"
-			smallMenuClassName="navbar burger-menu"
-			menu={
-				<ul>
-					<li>
-						<a href="#about">About Us</a>
-					</li>
-					<li>
-						<a href="#people">People</a>
-					</li>
-					<li>
-						<a href="#classes">Classes</a>
-					</li>
-					<li>
-						<a href="#contact">Contact Us</a>
-					</li>
-					<li>
-						<a href="#links">Links</a>
-					</li>
-				</ul>
-			}
-		/>
+		<div className="stuck">
+			<ResponsiveNavbar
+				menuOpenButton={
+					<FontAwesomeIcon
+						icon={faBars}
+						className="font-awesome-icon__navbar"
+					/>
+				}
+				menuCloseButton={
+					<FontAwesomeIcon
+						icon={faTimes}
+						className="font-awesome-icon__navbar"
+					/>
+				}
+				changeMenuOn={breakpointSizes.smMinBreakpoint}
+				largeMenuClassName="navbar navbar-menu"
+				smallMenuClassName="navbar burger-menu"
+				menu={
+					<ul>
+						<li>
+							<a href="#about">About Us</a>
+						</li>
+						<li>
+							<a href="#people">People</a>
+						</li>
+						<li>
+							<a href="#classes">Classes</a>
+						</li>
+						<li>
+							<a href="#contact">Contact Us</a>
+						</li>
+						<li>
+							<a href="#links">Links</a>
+						</li>
+					</ul>
+				}
+			/>
+		</div>
 	);
 };

@@ -7,12 +7,17 @@
 	top: 0;
 }
 
-.navbar {
+.stuck {
 	@include stickyTop();
+}
+
+.navbar {
+	// @include stickyTop();
 	@include bodyFont();
 	overflow: hidden;
 	background-color: color(homepage, tkd-gray, 1);
 	margin: 0;
+	z-index: 999999;
 
 	&-menu {
 		width: 100%;
@@ -42,8 +47,21 @@
 }
 
 .burger-menu {
+	padding: 1rem 1.5rem;
+
+	div[role='button'] {
+		text-align: left;
+	}
 	li {
 		display: block;
 		list-style-type: none;
+		padding: 0.5rem 0.5rem;
+
+		a {
+			display: block;
+			margin: auto;
+			padding: 0.5rem 0.5rem;
+			width: 50%;
+		}
 	}
 }
