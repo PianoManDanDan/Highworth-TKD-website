@@ -4,9 +4,6 @@
   "private": true,
   "homepage": "http://www.highworthtkd.co.uk",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/react-fontawesome": "^0.1.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -21,6 +18,7 @@
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
     "react-responsive-navbar": "^1.0.11",
+    "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
@@ -60,9 +58,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --hot --config configs/webpack.dev.js",
     "build": "webpack --config configs/webpack.prod.js",
-	"build:stats": "webpack --config configs/webpack.prod.js --profile --json > webpack-stats.json",
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build",
+    "build:stats": "webpack --config configs/webpack.prod.js --profile --json > webpack-stats.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "jest -i",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --reporters=default --reporters=jest-junit",
