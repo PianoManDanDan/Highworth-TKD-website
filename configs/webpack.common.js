@@ -34,6 +34,10 @@ module.exports = {
 			template: './public/index.ejs',
 			meta: {
 				viewport: 'width=device-width, initial-scale=1.0',
+				description:
+					'Highworth Tae Kwon-Do Club is a family friendly martial arts club teaching traditional Tae Kwon-Do in the Swindon area.',
+				keywords:
+					'highworth swindon taekwondo taekwon-do tae kwon do self-defense deedigan martial arts ITF martialarts korea fitness sports sport family traditional UKITF anti-bullying skill team-building protection confidence',
 				robots: 'index,follow',
 			},
 		}),
