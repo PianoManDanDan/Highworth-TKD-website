@@ -1,6 +1,4 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { SectionHeading } from '../../../components/SectionHeading/src';
 import './ContactUs.scss';

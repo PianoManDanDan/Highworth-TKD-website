@@ -1,8 +1,8 @@
 import React from 'react';
 import { SectionHeading } from '../../../components/SectionHeading/src';
-import './AffiliateLinks.scss';
 import { LinkWrapperProps } from '../../../components/LinkWrapper/src/types';
 import { LinkWrapper } from '../../../components/LinkWrapper/src';
+import './AffiliateLinks.scss';
 import deediganLogo from '../../../../assets/deedigan-logo.png';
 import itfuLogo from '../../../../assets/ITFU.png';
 
