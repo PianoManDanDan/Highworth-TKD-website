@@ -27,7 +27,7 @@ export const HomePage: React.FC<{}> = () => {
 				<ContactUs />
 				<AffiliateLinks />
 			</div>
-			<Footer />
+			<Footer copyrightText="©2020 Daniel Martin" />
 		</div>
 	);
 };
