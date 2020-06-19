@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { navbarLink } from './types';
 import './Navbar.scss';
 
@@ -29,19 +29,25 @@ export const Navbar: React.FC<{}> = () => {
 
 	const [menuOpen, setMenuOpen] = useState(false);
 	return (
-		<div className="navbar">
+		<nav className="navbar">
 			<div className="app-content-container">
 				<button type="button" onClick={() => setMenuOpen(!menuOpen)}>
-					<FaBars />
+					{menuOpen ? (
+						<FaTimes className="nav-icon nav-icon__open" />
+					) : (
+						<FaBars className="nav-icon__closed" />
+					)}
 				</button>
 				<ul className={menuOpen ? 'nav-links nav-open' : 'nav-links'}>
 					{links.map((link) => (
 						<li key={link.text}>
-							<a href={link.link}>{link.text}</a>
+							<a href={link.link} onClick={() => setMenuOpen(false)}>
+								{link.text}
+							</a>
 						</li>
 					))}
 				</ul>
 			</div>
-		</div>
+		</nav>
 	);
 };

@@ -42,18 +42,40 @@
 	}
 
 	@include mediaQueryFor(small, max) {
+		
+		transition: all 2s ease;
+
+		.nav-links {
+			display: none;
+		}
+
 		button {
-			display: inline-block;
+			padding: 1.2rem 1.5rem;
+			display: flex;
+			align-items: center;
 			@include bodyFont();
 			color: inherit;
 			background: transparent;
 			border: none;
 			cursor: pointer;
-			outline: none;
 		}
 
-		li {
+		.nav-open {
 			display: block;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+			li {
+				display: block;
+				padding-left: 1.5rem;
+				padding-bottom: 1rem;
+
+				a {
+					padding: 0.2rem;
+				}
+			}
 		}
+
+		
 	}
 }
