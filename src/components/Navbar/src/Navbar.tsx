@@ -10,7 +10,7 @@ export const Navbar: React.FC<{}> = () => {
 			link: '#about',
 		},
 		{
-			text: 'People',
+			text: 'Instructors',
 			link: '#people',
 		},
 		{

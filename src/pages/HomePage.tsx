@@ -3,7 +3,7 @@ import { Banner } from '../components/Banner/src';
 import { Navbar } from '../components/Navbar/src';
 import {
 	AboutUs,
-	People,
+	Instructors,
 	Classes,
 	ContactUs,
 	AffiliateLinks,
@@ -22,7 +22,7 @@ export const HomePage: React.FC<{}> = () => {
 			<Navbar />
 			<div className="app-content-container">
 				<AboutUs />
-				<People />
+				<Instructors />
 				<Classes />
 				<ContactUs />
 				<AffiliateLinks />

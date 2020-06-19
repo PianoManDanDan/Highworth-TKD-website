@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionHeading } from '../../../components/SectionHeading/src';
 import { Profile, ProfileProps } from '../../../components/Profile/src';
-import './People.scss';
+import './Instructors.scss';
 import alison from '../../../../assets/Alison.jpg';
 import daniel from '../../../../assets/Daniel.jpg';
 import andrew from '../../../../assets/Andrew.jpg';
@@ -43,11 +43,11 @@ const instructors: ProfileProps[] = [
 	},
 ];
 
-export const People: React.FC<{}> = () => {
+export const Instructors: React.FC<{}> = () => {
 	return (
 		<div className="section">
 			<div id="people" className="navbar-offset">
-				<SectionHeading text="People" />
+				<SectionHeading text="Instructors" />
 				<div className="section-body">
 					{instructors.map((instructor) => (
 						<Profile {...instructor} key={instructor.name} />
