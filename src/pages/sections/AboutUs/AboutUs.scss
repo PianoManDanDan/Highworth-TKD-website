@@ -1,9 +1,6 @@
 @import '../../../globalStyles/fonts';
 
 #about {
-	.section-body {
-		@include bodyFont();
-	}
 	.definition {
 		font-style: italic;
 	}

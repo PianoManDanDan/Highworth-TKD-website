@@ -9,7 +9,6 @@
 }
 
 .navbar {
-	@include bodyFont();
 	@include stickyTop();
 	overflow: hidden;
 	background-color: color(homepage, tkd-gray, 1);
@@ -53,7 +52,6 @@
 			padding: 1.2rem 1.5rem;
 			display: flex;
 			align-items: center;
-			@include bodyFont();
 			color: inherit;
 			background: transparent;
 			border: none;

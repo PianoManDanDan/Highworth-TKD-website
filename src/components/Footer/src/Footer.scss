@@ -1,8 +1,6 @@
-@import '../../../globalStyles/fonts';
 @import '../../../globalStyles/colors';
 
 .footer {
-	@include bodyFont();
 	padding: 1.5rem 0;
 	background-color: color(homepage, tkd-gray, 1);
 	font-size: 1.5rem;
