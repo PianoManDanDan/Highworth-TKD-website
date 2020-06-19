@@ -37,12 +37,14 @@ const externalLinks: LinkWrapperProps[] = [
 
 export const AffiliateLinks: React.FC<{}> = () => {
 	return (
-		<div id="links" className="section">
-			<SectionHeading text="Our Affiliates" />
-			<div className="section-body">
-				{externalLinks.map((link) => (
-					<LinkWrapper {...link} key={link.link.text} />
-				))}
+		<div className="section">
+			<div id="links" className="navbar-offset">
+				<SectionHeading text="Our Affiliates" />
+				<div className="section-body">
+					{externalLinks.map((link) => (
+						<LinkWrapper {...link} key={link.link.text} />
+					))}
+				</div>
 			</div>
 		</div>
 	);

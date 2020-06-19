@@ -1,5 +1,6 @@
 // colors, fonts, and sizes need to be imported for each use case
 @import 'colors';
+@import 'sizes';
 
 // app and grid styles are imported globally here
 // Don't import elsewhere
@@ -11,6 +12,7 @@
 
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
 }
 
 body {

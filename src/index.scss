@@ -2,4 +2,18 @@
 
 .section {
 	padding: 2rem 0;
+
+		@include mediaQueryFor(small, max) {
+		padding: 1rem 0;
+	}
+}
+
+.navbar-offset {
+	padding-top: 5.5rem;
+	margin-top: -5.5rem;
+
+	@include mediaQueryFor(small, max) {
+		padding-top: 4.8rem;
+		margin-top: -4.8rem;
+	}
 }
