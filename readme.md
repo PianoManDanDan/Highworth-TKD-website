@@ -24,13 +24,34 @@ A visual representation of the build output can be seen by running
 `npm run build && npx webpack-bundle-analyzer webpack-stats.json dist` 
 in the command line.
 
+### `npm run view-stats`
+
+Runs `npm run build:stats` and then starts a server to analyze the webpack 
+output bundle size.
+
+### `npm run predeploy`
+
+Used by gh-pages to build app.
+
+### `npm run deploy`
+
+Used by gh-pages to publish the built app to gh-pages site.
+
+### `npm run publish`
+
+Combines `npm run predeploy` and `npm run deploy` into one command.
+
 ### `npm run test`
 
-Launches the test runner.
+Launches the test runner in serial mode.
 
 ### `npm run test:watch`
 
-Launches the test runner in the watch mode.
+Launches the test runner in the watch mode. Only changed files are rerun.
+
+### `npm run test:ci`
+
+Launches the test runner in ci mode.
 
 ### `npm run storybook`
 
