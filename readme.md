@@ -19,7 +19,10 @@ Builds the app for production to the `dist` folder.<br />
 ### `npm run build:stats`
 
 Builds the app for production to the `dist` folder.<br />
-This also outputs a webpack stats file for debugging webpack build sizes.
+This also outputs a webpack stats file for debugging webpack build sizes. 
+A visual representation of the build output can be seen by running 
+`npm run build && npx webpack-bundle-analyzer webpack-stats.json dist` 
+in the command line.
 
 ### `npm run test`
 

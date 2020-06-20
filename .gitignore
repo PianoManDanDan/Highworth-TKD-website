@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+/dist
+webpack-stats.json
 
 # misc
 .DS_Store

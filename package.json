@@ -59,7 +59,7 @@
     "build": "webpack --config configs/webpack.prod.js",
     "build:stats": "webpack --config configs/webpack.prod.js --profile --json > webpack-stats.json",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "test": "jest -i",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --reporters=default --reporters=jest-junit",
