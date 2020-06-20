@@ -1,1 +1,1 @@
-export * from './NavbarTypes';
+export * from './NameChangeNavbarTypes';
