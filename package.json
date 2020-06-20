@@ -60,7 +60,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --hot --config configs/webpack.dev.js",
     "build": "webpack --config configs/webpack.prod.js",
-    "build:stats": "webpack --config configs/webpack.prod.js --profile --json > webpack-stats.json",
+	"build:stats": "webpack --config configs/webpack.prod.js --profile --json > webpack-stats.json",
+	"view-stats": "npm run build:stats && npx webpack-bundle-analyzer webpack-stats.json dist",
     "predeploy": "npm run build",
 	"deploy": "gh-pages -d dist",
 	"publish": "npm run predeploy && npm run deploy",
