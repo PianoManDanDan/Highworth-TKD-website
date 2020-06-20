@@ -46,7 +46,7 @@ const instructors: ProfileProps[] = [
 export const Instructors: React.FC<{}> = () => {
 	return (
 		<div className="section">
-			<div id="people" className="navbar-offset">
+			<div id="instructors" className="navbar-offset">
 				<SectionHeading text="Instructors" />
 				<div className="section-body">
 					{instructors.map((instructor) => (
