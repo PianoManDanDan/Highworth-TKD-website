@@ -1,32 +1,9 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { navbarLink } from './types';
+import { NavbarProps } from './types';
 import './Navbar.scss';
 
-export const Navbar: React.FC<{}> = () => {
-	const links: navbarLink[] = [
-		{
-			text: 'About Us',
-			link: '#about',
-		},
-		{
-			text: 'Instructors',
-			link: '#people',
-		},
-		{
-			text: 'Classes',
-			link: '#classes',
-		},
-		{
-			text: 'Contact Us',
-			link: '#contact',
-		},
-		{
-			text: 'Our Affiliates',
-			link: '#links',
-		},
-	];
-
+export const Navbar: React.FC<NavbarProps> = ({ linkList }) => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	return (
 		<nav className="navbar">
@@ -39,7 +16,7 @@ export const Navbar: React.FC<{}> = () => {
 					)}
 				</button>
 				<ul className={menuOpen ? 'nav-links nav-open' : 'nav-links'}>
-					{links.map((link) => (
+					{linkList.map((link) => (
 						<li key={link.text}>
 							<a href={link.link} onClick={() => setMenuOpen(false)}>
 								{link.text}
