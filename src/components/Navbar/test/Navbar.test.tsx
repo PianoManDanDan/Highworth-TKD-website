@@ -1,8 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import 'jest-extended';
 import '@testing-library/jest-dom/extend-expect';
-import { FaBars, FaTimes } from 'react-icons/fa'; // MOCK
 import { Navbar, NavbarProps, NavbarLink } from '../src';
+
+const mockFaBars = jest.fn(() => <div />);
+const mockFaTimes = jest.fn(() => <div />);
+
+jest.mock('react-icons/fa', () => ({
+	FaBars: () => mockFaBars(),
+	FaTimes: () => mockFaTimes(),
+}));
 
 describe('Navbar component', () => {
 	describe('When passed correct props', () => {
@@ -27,6 +35,8 @@ describe('Navbar component', () => {
 			expect(container.querySelector('.nav-links')).toBeInTheDocument();
 			expect(container).toHaveTextContent(testNavbarLink1.text);
 			expect(container).toHaveTextContent(testNavbarLink2.text);
+			// expect(mockFaBars).toHaveBeenCalledTimes(1);
+			// expect(mockFaTimes).toHaveBeenCalledTimes(1);
 		});
 	});
 });
