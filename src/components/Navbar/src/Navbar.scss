@@ -43,12 +43,14 @@
 	@include mediaQueryFor(small, max) {
 		
 		transition: all 2s ease;
+		font-size: 2.5rem;
 
 		.nav-links {
 			display: none;
 		}
 
 		button {
+			font-size: inherit;
 			padding: 1.2rem 1.5rem;
 			display: flex;
 			align-items: center;
